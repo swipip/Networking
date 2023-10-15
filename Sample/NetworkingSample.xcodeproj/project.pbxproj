@@ -11,9 +11,9 @@
 		A0B2E8EB2ADC57F700F9A09D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B2E8EA2ADC57F700F9A09D /* ContentView.swift */; };
 		A0B2E8ED2ADC57F900F9A09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B2E8EC2ADC57F900F9A09D /* Assets.xcassets */; };
 		A0B2E8F02ADC57F900F9A09D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B2E8EF2ADC57F900F9A09D /* Preview Assets.xcassets */; };
-		A0B2E8FA2ADC583900F9A09D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = A0B2E8F92ADC583900F9A09D /* Networking */; };
 		A0B2E8FC2ADC584F00F9A09D /* PhotosEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B2E8FB2ADC584F00F9A09D /* PhotosEndpoint.swift */; };
 		A0B2E8FF2ADC588800F9A09D /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B2E8FE2ADC588800F9A09D /* Picture.swift */; };
+		A0CF8A682ADC5D3C00E78666 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = A0CF8A672ADC5D3C00E78666 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +22,10 @@
 		A0B2E8EA2ADC57F700F9A09D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0B2E8EC2ADC57F900F9A09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B2E8EF2ADC57F900F9A09D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A0B2E8F72ADC582200F9A09D /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = ../..; sourceTree = "<group>"; };
 		A0B2E8FB2ADC584F00F9A09D /* PhotosEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosEndpoint.swift; sourceTree = "<group>"; };
 		A0B2E8FE2ADC588800F9A09D /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		A0CF8A652ADC5D2700E78666 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = ..; sourceTree = "<group>"; };
+		A0CF8A662ADC5D3600E78666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B2E8FA2ADC583900F9A09D /* Networking in Frameworks */,
+				A0CF8A682ADC5D3C00E78666 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +61,7 @@
 		A0B2E8E72ADC57F700F9A09D /* NetworkingSample */ = {
 			isa = PBXGroup;
 			children = (
+				A0CF8A662ADC5D3600E78666 /* Info.plist */,
 				A0B2E8E82ADC57F700F9A09D /* NetworkingSampleApp.swift */,
 				A0B2E8EA2ADC57F700F9A09D /* ContentView.swift */,
 				A0B2E8FD2ADC587600F9A09D /* PhotosEndpoint */,
@@ -80,7 +82,7 @@
 		A0B2E8F62ADC582200F9A09D /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				A0B2E8F72ADC582200F9A09D /* Networking */,
+				A0CF8A652ADC5D2700E78666 /* Networking */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -118,7 +120,7 @@
 			);
 			name = NetworkingSample;
 			packageProductDependencies = (
-				A0B2E8F92ADC583900F9A09D /* Networking */,
+				A0CF8A672ADC5D3C00E78666 /* Networking */,
 			);
 			productName = NetworkingSample;
 			productReference = A0B2E8E52ADC57F700F9A09D /* NetworkingSample.app */;
@@ -309,6 +311,7 @@
 				DEVELOPMENT_TEAM = 3ZK349YW98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -338,6 +341,7 @@
 				DEVELOPMENT_TEAM = 3ZK349YW98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkingSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,7 +384,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A0B2E8F92ADC583900F9A09D /* Networking */ = {
+		A0CF8A672ADC5D3C00E78666 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
 		};

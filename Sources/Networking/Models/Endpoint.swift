@@ -15,12 +15,20 @@ import Foundation
 /// The actual url is constructed in ``Endpoint.url``.
 ///
 public protocol Endpoint {
+
+    /// The model to decode the retrieved data into.
     associatedtype Model: Decodable
 
+    /// The url host.
     var host: String { get }
+
+    /// The url path.
     var path: String { get }
+
+    /// The query items to add the url.
     var queryParams: [QueryItem] { get }
 
+    /// The actual URL formed from other properties.
     var url: URL? { get }
 }
 
